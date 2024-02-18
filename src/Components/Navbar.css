@@ -1,0 +1,39 @@
+/* Navbar.css */
+.bt {
+  transition: transform 0.3s ease-in-out;
+}
+
+.icon {
+  color: white;
+}
+
+:hover.icon {
+  color: rgb(122, 182, 228);
+  transition: .3s all;
+}
+
+.text-animation {
+  animation-name: slideInFromLeft;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width:767px) {
+  .nav {
+    box-shadow: 0 2px 10px 2px black;
+    background-color: rgba(9, 27, 42, 255);
+  }
+}

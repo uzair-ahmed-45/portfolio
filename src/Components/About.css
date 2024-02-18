@@ -1,0 +1,16 @@
+.img{
+    border: 1px solid rgb(122,182,228);
+    width: 350px;
+    height: 350px;
+    border-radius: 100%;
+    cursor: pointer;
+    
+}
+:hover.img{
+    box-shadow: 0 0 15px 4px rgba(122, 182, 228, 0.5), 0 0 15px 4px rgba(122, 182, 228, 0.3);
+    transition: .5s;
+
+}
+:hover.contact{
+    transition: .5s all;
+}
