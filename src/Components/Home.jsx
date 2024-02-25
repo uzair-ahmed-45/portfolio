@@ -5,7 +5,7 @@ import "./Home.css"
 export default function Home() {
     return (
         <>
-            <div className='flex justify-center text-center items-center py-24 px-20 relative mt-[-50px] '>
+            <div className='flex justify-center text-center items-center py-24 px-20 relative mt-[-50px] ' id='home'>
                 <img src="/bg.jpg" alt="" className='absolute opacity-5 h-[650px] md:max-h-[550px] w-full z-0' />
                 <div className='w-[80vw] md:w-[50vw] flex flex-col gap-5 md:gap-8 z-10'>
                     <h1 className='md:text-2xl text-lg font-bold'>Hi,</h1>

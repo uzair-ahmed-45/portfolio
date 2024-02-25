@@ -4,6 +4,7 @@ import Navbar from './Components/Navbar'
 import Home from './Components/Home'
 import About from './Components/About'
 import Services from './Components/Services'
+import Logos from './Components/Logos'
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
         <Home/>
         <About/>
         <Services/>
+        <Logos/>
     </div>
   )
 }

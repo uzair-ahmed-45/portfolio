@@ -13,7 +13,7 @@ export default function About() {
 
     return (
         <>
-            <div className='lg:flex lg:justify-center grid justify-center gap-10 md:gap-0 py-40 md:py-32'>
+            <div className='lg:flex lg:justify-center grid justify-center gap-10 md:gap-0 py-40 md:py-32' id='about'>
                 <div className='mx-28' data-aos="fade-right">
                     <img src="/profile.jpg" alt="" className='img' />
                 </div>

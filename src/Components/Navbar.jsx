@@ -23,19 +23,19 @@ export default function Navbar() {
 
         </div>
         <ul className='md:flex hidden md:block md:items-center z-[-1] md:z-auto md:py-0 py-5'>
-          <li className='md:mx-5 md:my-0 my-5 hover:text-[rgb(89,122,148)] cursor-pointer duration-500'>Home</li>
-          <li className='md:mx-5 md:my-0 my-5  hover:text-[rgb(89,122,148)] cursor-pointer duration-500'>About</li>
-          <li className='md:mx-5 md:my-0 my-5 hover:text-[rgb(89,122,148)] cursor-pointer duration-500'>Services</li>
-          <li className='md:mx-5 md:my-0 my-5 hover:text-[rgb(89,122,148)] cursor-pointer duration-500'>Skills</li>
-          <li className='md:mx-5 md:my-0 my-5 hover:text-[rgb(89,122,148)] cursor-pointer duration-500'>Contacts</li>
+          <li className='md:mx-5 md:my-0 my-5 hover:text-[rgb(89,122,148)] cursor-pointer duration-500'><a href="#home">Home</a></li>
+          <li className='md:mx-5 md:my-0 my-5  hover:text-[rgb(89,122,148)] cursor-pointer duration-500'><a href="#about">About</a></li>
+          <li className='md:mx-5 md:my-0 my-5 hover:text-[rgb(89,122,148)] cursor-pointer duration-500'><a href="#services">Services</a></li>
+          <li className='md:mx-5 md:my-0 my-5 hover:text-[rgb(89,122,148)] cursor-pointer duration-500'><a href="#skills">Skills</a></li>
+          <li className='md:mx-5 md:my-0 my-5 hover:text-[rgb(89,122,148)] cursor-pointer duration-500'><a href="#contacts">Contacts</a></li>
         </ul>
         {bars && (
           <ul className='md:hidden flex flex-col items-center'>
-            <li className='my-5 hover:text-[rgb(89,122,148)] cursor-pointer duration-500'>Home</li>
-            <li className='my-5 hover:text-[rgb(89,122,148)] cursor-pointer duration-500'>About</li>
-            <li className='my-5 hover:text-[rgb(89,122,148)] cursor-pointer duration-500'>Services</li>
-            <li className='my-5 hover:text-[rgb(89,122,148)] cursor-pointer duration-500'>Skills</li>
-            <li className='my-5 hover:text-[rgb(89,122,148)] cursor-pointer duration-500'>Contacts</li>
+            <li className='my-5 hover:text-[rgb(89,122,148)] cursor-pointer duration-500'><a href="#home">Home</a></li>
+            <li className='my-5 hover:text-[rgb(89,122,148)] cursor-pointer duration-500'><a href="#about">About</a></li>
+            <li className='my-5 hover:text-[rgb(89,122,148)] cursor-pointer duration-500'><a href="#services">Services</a></li>
+            <li className='my-5 hover:text-[rgb(89,122,148)] cursor-pointer duration-500'><a href="#skills">Skills</a></li>
+            <li className='my-5 hover:text-[rgb(89,122,148)] cursor-pointer duration-500'><a href="#contacts">Contacts</a></li>
           </ul>
         )}
       </div>

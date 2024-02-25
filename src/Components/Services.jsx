@@ -13,7 +13,7 @@ export default function Services() {
 
     return (
         <>
-            <div className='bg-[rgba(2,24,42,255)] py-24 px-24 '>
+            <div className='bg-[rgba(2,24,42,255)] py-24 px-24 ' id='services'>
                 <h1 className='text-center text-4xl text-[rgb(122,182,228)] font-bold'>My Services</h1>
                 <div className='flex flex-wrap justify-center mt-12 gap-10'>
                     <div className='py-16 bg-[rgba(18,27,42,255)] px-12 rounded-2xl cursor-pointer servicebox w-[80vw] md:w-[40vw] flex flex-col ' data-aos="flip-right">
