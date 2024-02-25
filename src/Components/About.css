@@ -14,3 +14,11 @@
 :hover.contact{
     transition: .5s all;
 }
+
+@media screen and (max-width : 450px) {
+    .img{
+        width: 200px;
+        height: 200px;
+    }
+    
+}

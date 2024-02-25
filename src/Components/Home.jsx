@@ -6,16 +6,16 @@ export default function Home() {
     return (
         <>
             <div className='flex justify-center text-center items-center py-24 px-20 relative mt-[-50px] '>
-                <img src="/bg.jpg" alt="" className='absolute opacity-5  max-h-[550px] w-full z-0' />
-                <div className='w-[60vw] md:w-[50vw] flex flex-col gap-8 z-10'>
-                    <h1 className='text-2xl font-bold'>Hi,</h1>
-                    <h1 className='text-5xl '>I'm <span className='text-[rgb(122,182,228)] cursor-pointer hover:drop-shadow'>Uzair Ahmed</span> </h1>
-                    <p className=' text-gray-400 md:text-xl text-sm '>A passionate MernStack Developer building web and mobile applications with Javascript/Reactjs/TailwindCSS/Nodejs/Expressjs/MongoDB and many other cool frameworks and liberaries</p>
-                    <div className='flex justify-between w-[25vw] md:w-[15vw] m-auto'>
-                        <div className='i w-11 h-11 rounded-full text-center py-2 px-2 cursor-pointer hover:bg-[rgb(43,110,161)]' style={{ border: "1px solid rgb(122,182,228)" }}>
+                <img src="/bg.jpg" alt="" className='absolute opacity-5 h-[650px] md:max-h-[550px] w-full z-0' />
+                <div className='w-[80vw] md:w-[50vw] flex flex-col gap-5 md:gap-8 z-10'>
+                    <h1 className='md:text-2xl text-lg font-bold'>Hi,</h1>
+                    <h1 className='md:text-5xl text-2xl'>I'm <span className='text-[rgb(122,182,228)] cursor-pointer hover:drop-shadow'>Uzair Ahmed</span> </h1>
+                    <p className=' text-gray-400 md:text-xl text-[12px] '>A passionate MernStack Developer building web and mobile applications with Javascript/Reactjs/TailwindCSS/Nodejs/Expressjs/MongoDB and many other cool frameworks and liberaries</p>
+                    <div className='flex justify-between w-[40vw] md:w-[15vw] m-auto'>
+                        <div className='i w-11 h-11  rounded-full text-center py-2 px-2 cursor-pointer hover:bg-[rgb(43,110,161)]' style={{ border: "1px solid rgb(122,182,228)" }}>
                             <i class="fa-brands fa-linkedin-in icon"></i>
                         </div>
-                        <div className='i w-11 h-11 rounded-full text-center py-2 px-2 cursor-pointer hover:bg-[rgb(43,110,161)]' style={{ border: "1px solid rgb(122,182,228)" }}>
+                        <div className='i w-11 h-11  rounded-full text-center py-2 px-2 cursor-pointer hover:bg-[rgb(43,110,161)]' style={{ border: "1px solid rgb(122,182,228)" }}>
                             <i class="fa-brands fa-whatsapp icon"></i>
                         </div>
                         <div className='i w-11 h-11 rounded-full text-center py-2 px-2 cursor-pointer hover:bg-[rgb(43,110,161)]' style={{ border: "1px solid rgb(122,182,228)" }}>
