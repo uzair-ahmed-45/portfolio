@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Contacts.css"
+
 
 
 export default function Contacts() {
@@ -15,7 +15,7 @@ export default function Contacts() {
                             </div>
                             <div className='flex flex-col ms-8'>
                                 <h1 className='text-lg font-medium text-[rgb(122,182,228)]'>Name</h1>
-                                <h2 className='text-xl text-gray-300'>Uzair Ahmed</h2>
+                                <h2 className='text-lg md:text-xl text-gray-300'>Uzair Ahmed</h2>
                             </div>
                         </div>
                         <div className='flex justify-center md:items-center items-startr '>
@@ -24,7 +24,7 @@ export default function Contacts() {
                             </div>
                             <div className='flex flex-col ms-8'>
                                 <h1 className='text-lg font-medium text-[rgb(122,182,228)]'>Email</h1>
-                                <h2 className='text-xl text-gray-300'>uzairbmj@gmail.com</h2>
+                                <h2 className='text-lg md:text-xl text-gray-300'>uzairbmj@gmail.com</h2>
                             </div>
                         </div>
                         <div className='flex justify-center md:items-center items-start'>
@@ -33,7 +33,7 @@ export default function Contacts() {
                             </div>
                             <div className='flex flex-col ms-8'>
                                 <h1 className='text-lg font-medium text-[rgb(122,182,228)]'>Phone</h1>
-                                <h2 className='text-xl text-gray-300'>+92 334 8593896</h2>
+                                <h2 className='text-lg md:text-xl text-gray-300'>+92 334 8593896</h2>
                             </div>
                         </div>
                         <div className='flex justify-center md:items-center items-start'>
@@ -42,7 +42,7 @@ export default function Contacts() {
                             </div>
                             <div className='flex flex-col ms-8'>
                                 <h1 className='text-lg font-medium text-[rgb(122,182,228)]'>Location</h1>
-                                <h2 className='text-xl text-gray-300'>Agra Taj Colony lyari Karachi</h2>
+                                <h2 className='text-lg md:text-xl text-gray-300'>Agra Taj Colony lyari Karachi</h2>
                             </div>
                         </div>
                         <div className='flex justify-between'>
