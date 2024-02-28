@@ -1,0 +1,8 @@
+.sk{
+    font-size: 80px;
+    opacity: 50%;
+}
+:hover.sk{
+    color: rgba(2,24,42,255);
+    transition: all .3s;
+}
