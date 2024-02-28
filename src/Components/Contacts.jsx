@@ -49,7 +49,7 @@ export default function Contacts() {
 
                         </div>
                     </div>
-                    <div className='md:max-w-[40vw] max-w-[80vw]  px-12 '>
+                    <div className='md:max-w-[40vw] max-w-[80vw] px-8 md:px-12 '>
                         <form action="https://formspree.io/f/xeqykldl" method='POST' className='flex flex-col gap-3'>
                             <input type="text" placeholder='Username' required name='username' className='px-4 py-3 rounded-lg focus:bg-transparent inputs text-black focus:text-white'/>
                             <input type="email" placeholder='Email' required name='email' className=' px-4 py-3 rounded-lg focus:bg-transparent text-black focus:text-white'/>
