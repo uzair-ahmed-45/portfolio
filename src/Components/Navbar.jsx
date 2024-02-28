@@ -27,6 +27,7 @@ export default function Navbar() {
           <li className='md:mx-5 md:my-0 my-5  hover:text-[rgb(89,122,148)] cursor-pointer duration-500'><a href="#about">About</a></li>
           <li className='md:mx-5 md:my-0 my-5 hover:text-[rgb(89,122,148)] cursor-pointer duration-500'><a href="#services">Services</a></li>
           <li className='md:mx-5 md:my-0 my-5 hover:text-[rgb(89,122,148)] cursor-pointer duration-500'><a href="#skills">Skills</a></li>
+          <li className='md:mx-5 md:my-0 my-5 hover:text-[rgb(89,122,148)] cursor-pointer duration-500'><a href="#Projects">Projects</a></li>
           <li className='md:mx-5 md:my-0 my-5 hover:text-[rgb(89,122,148)] cursor-pointer duration-500'><a href="#contacts">Contacts</a></li>
         </ul>
         {bars && (
@@ -35,6 +36,7 @@ export default function Navbar() {
             <li className='my-5 hover:text-[rgb(89,122,148)] cursor-pointer duration-500'><a href="#about">About</a></li>
             <li className='my-5 hover:text-[rgb(89,122,148)] cursor-pointer duration-500'><a href="#services">Services</a></li>
             <li className='my-5 hover:text-[rgb(89,122,148)] cursor-pointer duration-500'><a href="#skills">Skills</a></li>
+            <li className='my-5 hover:text-[rgb(89,122,148)] cursor-pointer duration-500'><a href="#Projects">Projects</a></li>
             <li className='my-5 hover:text-[rgb(89,122,148)] cursor-pointer duration-500'><a href="#contacts">Contacts</a></li>
           </ul>
         )}
