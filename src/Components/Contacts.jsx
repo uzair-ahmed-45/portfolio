@@ -37,7 +37,7 @@ export default function Contacts() {
                             </div>
                         </div>
                         <div className='flex justify-center md:items-center items-start'>
-                            <div className='ms-[60px]'>
+                            <div className='ms-[40px] md:ms-[60px]'>
                                 <i class="fa-solid fa-location-dot" style={{ fontSize: "30px", color: "rgb(43, 110, 161)" }}></i>
                             </div>
                             <div className='flex flex-col ms-8'>
