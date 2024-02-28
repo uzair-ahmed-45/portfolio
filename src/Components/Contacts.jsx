@@ -5,7 +5,7 @@ import "./Contacts.css"
 export default function Contacts() {
     return (
         <>
-            <div className='md:py-20 md:px-20 py-12 px-10' id='contacts'>
+            <div className='md:py-20 md:px-20 py-12 px-8' id='contacts'>
                 <h1 className='text-2xl md:text-4xl font-bold text-center text-[rgb(122,182,228)]'>Contact me</h1>
                 <div className='flex flex-wrap justify-between w-[80vw] md:mt-20 mt-12 md:items-center items-start'>
                     <div className='flex flex-col gap-8'>
