@@ -46,7 +46,7 @@ export default function Contacts() {
                                 <h2 className='text-lg md:text-xl text-gray-300'>Agra Taj Colony lyari Karachi</h2>
                             </div>
                         </div>
-                        <div className='flex justify-between w-[60vw] md:w-[20vw] ms-[80px]'>
+                        <div className='flex justify-between w-[80vw] md:w-[20vw] ms-[80px]'>
                             <div className='i w-11 h-11  rounded-full text-center py-2 px-2 cursor-pointer hover:bg-[rgb(43,110,161)]' style={{ border: "1px solid rgb(122,182,228)" }}>
                                 <a href="https://wa.me/+923348593896" target='blank'> <i class="fa-brands fa-whatsapp icon"></i></a>
                             </div>
