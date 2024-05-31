@@ -1,12 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./Skills.css"
+import Aos from 'aos'
 
 export default function Skills() {
+
+  useEffect(() => {
+    Aos.init({duration : 2000})
+  },[])
   return (
     <>
       <div className='w-full bg-gray-400  relative' id='skills'>
         <img src="/bg2.jpg" alt="" className=' opacity-5 h-[40vh] w-full absolute' />
-        <div className='flex justify-between flex-wrap w-[80vw] m-auto py-10 px-10'>
+        <div className='md:flex md:justify-between grid grid-cols-3 justify-center place-items-center gap-x-10 gap-y-10  md:w-[80vw] m-auto py-10 px-10' data-aos="fade-up">
           <abbr title="HTML5"> <i class="fa-brands fa-html5 sk"></i></abbr>
           <abbr title="CSS3"><i class="fa-brands fa-css3-alt sk"></i></abbr>
           <abbr title="BOOTSTRAP 5"><i class="fa-brands fa-bootstrap sk"></i></abbr>

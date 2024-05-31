@@ -1,12 +1,13 @@
-
-button{
-    border: 1px solid rgb(122,182,228);
+button {
+    border: 1px solid rgb(122, 182, 228);
 }
-:hover.bt{
+
+:hover.bt {
     box-shadow: 0 0 4px 2px rgba(122, 182, 228, 0.5), 0 0 4px 4px rgba(122, 182, 228, 0.3);
     transition: .5s all;
 
 }
+
 /* .img{
     border: 1px solid rgb(122,182,228);
     width: 350px;
@@ -19,6 +20,3 @@ button{
     box-shadow: 0 0 15px 4px rgba(122, 182, 228, 0.5), 0 0 15px 4px rgba(122, 182, 228, 0.3);
 
 } */
-
-
-
