@@ -1,16 +1,33 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 export default function Lift() {
-    addEventListener("scroll", function () {
-        this.document.getElementById("icon").classList.remove("hidden")
-    })
+    const [isVisible, setIsVisible] = useState(false);
 
-    function movetotop() {
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 0) {
+                setIsVisible(true);
+                document.getElementById("icon").classList.remove("hidden")
+            } else {
+                setIsVisible(false);
+                document.getElementById("icon").classList.add("hidden")
+
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+    const movetotop = () => {
         window.scrollTo({
             top: 0,
-            behavior: "smooth"
+            behavior: 'smooth'
         });
-    }
+    };
 
     return (
         <>

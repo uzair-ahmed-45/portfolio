@@ -1,19 +1,44 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import "./Contact.css"
 import Aos from 'aos';
 
 export default function Contacts() {
+    const [modal, setmodal] = useState(false)
     useEffect(() => {
 
         Aos.init({ duration: 2000 })
     }, []);
 
+    const onSubmit = async (event) => {
+        event.preventDefault();
+        const formData = new FormData(event.target);
+
+        formData.append("access_key", "69002af5-74cf-48a5-aa47-3952fa442711");
+
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+
+        const res = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json"
+            },
+            body: json
+        }).then((res) => res.json());
+
+        if (res.success) {
+            setmodal(true)
+            console.log("Success", res);
+        }
+    };
+
     return (
         <>
             <div className='md:py-20 md:px-20 py-12 px-8' id='contacts'>
-                <h1 className='text-2xl md:text-4xl font-bold text-center text-[rgb(122,182,228)]' data-aos = "fade-up">Contact me</h1>
+                <h1 className='text-2xl md:text-4xl font-bold text-center text-[rgb(122,182,228)]' data-aos="fade-up">Contact me</h1>
                 <div className='flex flex-wrap justify-between gap-10 w-[80vw] md:mt-20 mt-12 md:items-center items-start'>
-                    <div className='flex flex-col gap-8' data-aos = "fade-up">
+                    <div className='flex flex-col gap-8' data-aos="fade-up">
                         <div className='flex justify-center md:items-center items-start'>
                             <div className='ms-[-75px]'>
                                 <i class="fa-solid fa-user md:mt-0 mt-2" style={{ fontSize: "25px", color: "rgb(43, 110, 161)" }}></i>
@@ -69,8 +94,8 @@ export default function Contacts() {
                             </div>
                         </div>
                     </div>
-                    <div className='md:max-w-[40vw] max-w-[80vw] md:px-12 ' data-aos = "fade-up">
-                        <form action="https://formspree.io/f/xeqykldl" method='POST' className='flex flex-col gap-3'>
+                    <div className='md:max-w-[40vw] max-w-[80vw] md:px-12 ' data-aos="fade-up">
+                        <form className='flex flex-col gap-3' onSubmit={onSubmit}>
                             <input type="text" placeholder='Username' required name='username' className='px-4 py-3 rounded-lg focus:bg-transparent inputs text-black focus:text-white' />
                             <input type="email" placeholder='Email' required name='email' className=' px-4 py-3 rounded-lg focus:bg-transparent text-black focus:text-white' />
                             <textarea name="message" id="" cols="50" rows="6" required className=' px-4 py-3 rounded-lg focus:bg-transparent text-black focus:text-white' placeholder='Message'></textarea>
@@ -80,6 +105,16 @@ export default function Contacts() {
 
                 </div>
             </div>
+            {
+                modal &&
+                <>
+                    <div className='fixed top-0 left-0 right-0 bottom-0 bg-[rgba(189, 189, 189, 0.9)]' onClick={() => setmodal(false)} style={{ background: "rgb(189, 189, 189, 0.9)" }}></div>
+                    <div className='fixed top-[50%] left-[50%] w-[40vw] max-w-[15rem]  bg-[white] rounded-lg shadow-lg py-4 px-4 ' style={{ transform: "translate(-50% , -50%)" }}>
+                        <h1 className='text-black ' >Message Sent Successfully</h1>
+                        <button className='mt-3 py-1 px-4 text-xl rounded-xl font-medium border-1 border-solid border-[rgb(95,141,184)] text-[rgb(95,141,184)]  hover:border-none hover:bg-[rgb(95,141,184)] hover:text-white hover:transition-all hover:duration-300 hover:scale-110' onClick={() => setmodal(false)} >Ok</button>
+                    </div>
+                </>
+            }
         </>
     )
 }
