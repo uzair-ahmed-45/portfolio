@@ -6,7 +6,7 @@ export default function Contacts() {
     const [modal, setmodal] = useState(false)
     useEffect(() => {
 
-        Aos.init({ duration: 2000 })
+        Aos.init({ duration: 1000 })
     }, []);
 
     const onSubmit = async (event) => {

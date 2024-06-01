@@ -5,7 +5,7 @@ import Aos from 'aos'
 export default function Skills() {
 
   useEffect(() => {
-    Aos.init({duration : 2000})
+    Aos.init({duration : 1000})
   },[])
   return (
     <>

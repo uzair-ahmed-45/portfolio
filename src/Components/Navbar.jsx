@@ -6,7 +6,7 @@ export default function Navbar() {
   const [bars, setBars] = useState(false);
   useEffect(() => {
 
-    Aos.init({ duration: 2000 })
+    Aos.init({ duration: 1000 })
   }, []);
 
 
