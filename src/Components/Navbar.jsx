@@ -4,11 +4,7 @@ import Aos from 'aos';
 
 export default function Navbar() {
   const [bars, setBars] = useState(false);
-  useEffect(() => {
-
-    Aos.init({ duration: 1000 })
-  }, []);
-
+  
 
   function show() {
     setBars(!bars);
@@ -21,14 +17,14 @@ export default function Navbar() {
           <h1 className='cursor-pointer text-animation text-[rgb(122,182,228)] hover:text-white  duration-500 text-xl md:text-3xl'>Uzair <span className='text-white hover:text-[rgb(122,182,228)]'>Ahmed</span> </h1>
           <div className='text-xl cursor-pointer md:hidden block mt-1' onClick={show} style={{ position: 'relative' }}>
             {bars ? (
-              <i className="fas fa-times icon text-[30px] mt-[-5px]" onClick={show} data-aos = "fade-left"></i>
+              <i className="fas fa-times icon text-[30px] mt-[-5px]" onClick={show}></i>
             ) : (
-              <i className="fas fa-bars icon text-[30px] mt-[-5px]" onClick={show} data-aos = "fade-left"></i>
+              <i className="fas fa-bars icon text-[30px] mt-[-5px]" onClick={show}></i>
             )}
           </div>
 
         </div>
-        <ul className='md:flex hidden md:block md:items-center z-[-1] md:z-auto md:py-0 py-5' data-aos = "fade-left">
+        <ul className='md:flex hidden md:block md:items-center z-[-1] md:z-auto md:py-0 py-5' >
           <li className='md:mx-5 md:my-0 my-5 hover:text-[rgb(89,122,148)] cursor-pointer duration-500'><a href="#home">Home</a></li>
           <li className='md:mx-5 md:my-0 my-5  hover:text-[rgb(89,122,148)] cursor-pointer duration-500'><a href="#about">About</a></li>
           <li className='md:mx-5 md:my-0 my-5 hover:text-[rgb(89,122,148)] cursor-pointer duration-500'><a href="#services">Services</a></li>
