@@ -21,7 +21,7 @@ export default function Projects() {
                 <div className=''>
                     {
                         projects && projects.map((items, index) => (
-                            <div key={index} className='px-5 py-10 w-[80vw] md:w-[25vw] bg-[rgba(9,27,42,255)] rounded-xl drop-shadow-[0_5px_10px_rgb(122,182,228)] hover:scale-105 hover:transition-all hover:duration-1000' data-aos = "fade-up">
+                            <div key={index} className='px-5 py-10 w-[80vw] md:w-[25vw] bg-[rgba(9,27,42,255)] rounded-xl hover:drop-shadow-[0_5px_10px_rgb(122,182,228)] hover:scale-110 hover:transition-all hover:duration-1000' data-aos = "fade-up">
                                 <div>
                                     <a href={items.websiteLink} target="blank">
                                         <img src={items.imgurl} alt={items.name} className="rounded-xl h-60" />
