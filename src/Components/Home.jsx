@@ -19,7 +19,7 @@ export default function Home() {
                     <p className=' text-gray-400 md:text-xl text-[12px] '>A passionate MernStack Developer building web and mobile applications with Javascript/Reactjs/TailwindCSS/Nodejs/Expressjs/MongoDB and many other cool frameworks and liberaries</p>
                     <div>
                         <a href='#contacts' className='bt px-4 py-2 font-small text-lg text-white bg-[rgb(122,182,228)] rounded-xl hover:bg-transparent border-1 border-solid border-[rgb(122,182,228)] hover:text-[rgb(122,182,228)] '>Contact me</a>
-                        <a href='/My resume.pdf' download className='bt px-4 py-2 font-small text-lg text-[rgb(122,182,228)] ms-4 rounded-xl hover:bg-[rgb(122,182,228)] hover:text-white' style={{ border: '1px solid rgb(122,182,228)' }}>Download CV</a>
+                        <a href='/myResume.pdf' download className='bt px-4 py-2 font-small text-lg text-[rgb(122,182,228)] ms-4 rounded-xl hover:bg-[rgb(122,182,228)] hover:text-white' style={{ border: '1px solid rgb(122,182,228)' }}>Download CV</a>
                     </div>
                 </div>
 
