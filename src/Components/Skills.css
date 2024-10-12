@@ -7,3 +7,33 @@
     color: rgba(2, 24, 42, 255);
     transition: all .3s;
 }
+
+.myskill {
+    color: rgb(100, 100, 100);
+    margin: 10px 30px;
+    font-size: 90px;
+}
+
+.myskill:hover {
+    color: rgba(2, 24, 42, 255);
+    transition: all .3s;
+}
+
+.nodejs {
+    color: rgb(100, 100, 100);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 180px;
+}
+
+.nodejs:hover {
+    color: rgba(2, 24, 42, 255);
+}
+.skillCeneterDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0px;
+}

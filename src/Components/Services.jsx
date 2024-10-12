@@ -6,8 +6,6 @@ import 'aos/dist/aos.css'
 
 export default function Services() {
 
-   
-
     return (
         <>
             <div className='bg-[rgba(2,24,42,255)] py-24 px-24 ' id='services'>

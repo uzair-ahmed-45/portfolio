@@ -75,7 +75,7 @@ export default function Contacts() {
                                 <h2 className='text-lg md:text-xl text-gray-300'>Agra Taj Colony lyari Karachi</h2>
                             </div>
                         </div>
-                        <div className='flex justify-between w-[80vw] md:w-[20vw] md:ms-[80px]'>
+                        <div className='flex justify-between w-[80vw] md:w-[20vw] md:ms-[60px]'>
                             <div className='i w-11 h-11  rounded-full text-center py-2 px-2 cursor-pointer hover:bg-[rgb(43,110,161)]' style={{ border: "1px solid rgb(122,182,228)" }}>
                                 <a href="https://wa.me/+923348593896" target='blank'> <i class="fa-brands fa-whatsapp icon"></i></a>
                             </div>
@@ -84,10 +84,7 @@ export default function Contacts() {
                             </div>
 
                             <div className='i w-11 h-11  rounded-full text-center py-2 px-2 cursor-pointer hover:bg-[rgb(43,110,161)]' style={{ border: "1px solid rgb(122,182,228)" }}>
-                                <a href="https://www.linkedin.com/in/uzair-ahmed-363b37265/" target='blank'><i class="fa-brands fa-linkedin-in icon"></i></a>
-                            </div>
-                            <div className='i w-11 h-11  rounded-full text-center py-2 px-2 cursor-pointer hover:bg-[rgb(43,110,161)]' style={{ border: "1px solid rgb(122,182,228)" }}>
-                                <a href="mailto:uzairbmj@gmail.com" target='blank'><i class="fa-solid fa-envelope icon"></i></a>
+                                <a href="https://www.linkedin.com/in/uzairahmed4594" target='blank'><i class="fa-brands fa-linkedin-in icon"></i></a>
                             </div>
                             <div className='i w-11 h-11 rounded-full text-center py-2 px-2 cursor-pointer hover:bg-[rgb(43,110,161)]' style={{ border: "1px solid rgb(122,182,228)" }}>
                                 <a href="https://github.com/uzair-bmj" target='blank'><i class="fa-brands fa-github icon"></i></a>

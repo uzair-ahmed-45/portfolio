@@ -1,6 +1,13 @@
 import React, { useEffect } from 'react'
 import "./Skills.css"
 import Aos from 'aos'
+import { IoLogoJavascript } from 'react-icons/io'
+import { FaHtml5, FaCss3Alt, FaPython, FaReact, FaBootstrap, FaGitAlt  } from 'react-icons/fa'
+import { TbBrandNextjs } from 'react-icons/tb'
+import { IoLogoFirebase } from "react-icons/io5";
+import { SiDialogflow, SiTypescript, SiTailwindcss,SiZod } from "react-icons/si";
+import { DiNodejs, DiMongodb } from "react-icons/di";
+import { DiNpm } from "react-icons/di";
 
 export default function Skills() {
 
@@ -9,22 +16,54 @@ export default function Skills() {
   }, [])
   return (
     <>
-      <div className='w-full bg-gray-400  relative' id='skills'>
-        <img src="/bg2.jpg" alt="" className=' opacity-5 h-[40vh] w-full absolute' />
-        <div className='md:flex md:justify-between grid grid-cols-3 justify-center place-items-center gap-x-10 gap-y-10  md:w-[80vw] m-auto py-10 px-10' data-aos="fade-up">
-          <abbr title="HTML5"> <i class="fa-brands fa-html5 sk"></i></abbr>
-          <abbr title="CSS3"><i class="fa-brands fa-css3-alt sk"></i></abbr>
-          <abbr title="BOOTSTRAP 5"><i class="fa-brands fa-bootstrap sk"></i></abbr>
-          <abbr title="TAILWIND CSS">
-            <img src="/tailwind.png" alt="" className="w-[200px]  opacity-50 cursor-pointer hover:colored-image" />
-          </abbr>
-          <abbr title="JAVSCRIPT"><i class="fa-brands fa-js sk"></i></abbr>
-          <abbr title="REACT"><i class="fa-brands fa-react sk"></i></abbr>
-          <abbr title="EXPRESS JS">
-            <img src="/express.png" alt="" className="w-[300px]  opacity-50 cursor-pointer" />
-          </abbr>
-          <abbr title="NODE JS"><i class="fa-brands fa-node sk"></i></abbr>
-          <abbr title="GIT"><i class="fa-brands fa-github sk"></i></abbr>
+      <div className='w-full bg-gray-400 bg-opacity-20 relative' id='skills'>
+        <img src="/bg2.jpg" alt="" className=' opacity-5 h-full w-full absolute' />
+        <div className='skillCeneterDiv py-10' data-aos="fade-up">
+          <div className='myskill' title='HTML'>
+            <FaHtml5 />
+          </div>
+          <div className="myskill" title='CSS'>
+            <FaCss3Alt />
+          </div>
+          <div className="myskill" title='TailwindCSS'>
+            <SiTailwindcss title='TailwindCSS' />
+          </div>
+          <div className="myskill" title='Bootstrap'>
+            <FaBootstrap />
+          </div>
+          <div className="myskill" title='Javascript'>
+            <IoLogoJavascript />
+          </div>
+          <div className="myskill" title='Python'>
+            <FaPython />
+          </div>
+          <div className="myskill">
+            <SiTypescript title='Typescript' />
+          </div>
+          <div className="myskill" title='Reactjs'>
+            <FaReact />
+          </div>
+          <div className="myskill" title='Nextjs'>
+            <TbBrandNextjs />
+          </div>
+          <div className="myskill" title='Firebase' >
+            <IoLogoFirebase />
+          </div>
+          <div className="nodejs">
+            <DiNodejs title='NodeJS and Express JS' />
+          </div>
+          <div className="myskill" title='MongoDB' >
+            <DiMongodb />
+          </div>
+          <div className="myskill" title='npm' >
+            <DiNpm />
+          </div>
+          <div className="myskill" title='Git' >
+            <FaGitAlt />
+          </div>
+          <div className="myskill" title='Zod' >
+            <SiZod />
+          </div>
         </div>
 
       </div>
