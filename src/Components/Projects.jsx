@@ -14,7 +14,7 @@ export default function Projects() {
             websiteLink: "https://leathertech-oasis.vercel.app/"
         },
         {
-            imgurl: "/homeopathy.png",
+            imgurl: "/homeopathy.PNG",
             name: "Homeopathy Case Taking Application",
             des: "Simplify homeopathy case-taking with an intuitive app for accurate diagnosis and patient management.",
             githubLink: "",
