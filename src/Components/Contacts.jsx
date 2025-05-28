@@ -1,15 +1,19 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import "./Contact.css"
 import Aos from 'aos';
 
 export default function Contacts() {
     const [modal, setmodal] = useState(false)
+    const [loading, setLoading] = useState(false)
+    const formRef = useRef(null);
+
     useEffect(() => {
         Aos.init({ duration: 1000 })
     }, []);
 
     const onSubmit = async (event) => {
         event.preventDefault();
+        setLoading(true);
         const formData = new FormData(event.target);
 
         formData.append("access_key", "84b7b3ee-d23f-454e-8b35-3763b8aa4122");
@@ -26,9 +30,12 @@ export default function Contacts() {
             body: json
         }).then((res) => res.json());
 
+        setLoading(false);
         if (res.success) {
-            setmodal(true)
-            // console.log("Success", res);
+            setmodal(true);
+            if (formRef.current) {
+                formRef.current.reset();
+            }
         }
     };
 
@@ -36,8 +43,8 @@ export default function Contacts() {
         <>
             <div className='md:py-20 md:px-20 py-12 px-8' id='contacts'>
                 <h1 className='text-2xl md:text-4xl font-bold text-center text-[rgb(122,182,228)]' data-aos="fade-up">Contact me</h1>
-                <div className='flex flex-wrap md:justify-between justify-center gap-14 md:mt-20 mt-12 md:items-center items-start md:px-'>
-                    <div className='flex flex-col gap-8 justify-start' data-aos="fade-up">
+                <div className='flex flex-wrap justify-between gap-10 w-[80vw] md:mt-20 mt-12 md:items-center items-start'>
+                    <div className='flex flex-col gap-8' data-aos="fade-up">
                         <div className='flex justify-start items-center gap-x-5'>
                             <div className=''>
                                 <i class="fa-solid fa-user " style={{ fontSize: "25px", color: "rgb(43, 110, 161)" }}></i>
@@ -90,12 +97,25 @@ export default function Contacts() {
                             </div>
                         </div>
                     </div>
-                    <div className='md:max-w-[40vw] max-w-[80vw] ' data-aos="fade-up">
-                        <form className='flex flex-col gap-3' onSubmit={onSubmit}>
+                    <div className='md:max-w-[40vw] max-w-[80vw] md:px-12 ' data-aos="fade-up">
+                        <form className='flex flex-col gap-3' onSubmit={onSubmit} ref={formRef}>
                             <input type="text" placeholder='Username' required name='username' className='px-4 py-3 rounded-lg focus:bg-transparent inputs text-black focus:text-white' />
                             <input type="email" placeholder='Email' required name='email' className=' px-4 py-3 rounded-lg focus:bg-transparent text-black focus:text-white' />
                             <textarea name="message" id="" cols="50" rows="6" required className=' px-4 py-3 rounded-lg focus:bg-transparent text-black focus:text-white' placeholder='Message'></textarea>
-                            <input type="submit" value="Send Message" className='w-full py-2 px-4 font-medium  cursor-pointer hover:bg-[rgb(122,182,228)] rounded-lg hover:text-black hover:transition-all hover:duration-500' style={{ border: "2px solid rgb(122,182,228)" }} />
+                            <button
+                                type="submit"
+                                className='w-full py-2 px-4 font-medium  cursor-pointer hover:bg-[rgb(122,182,228)] rounded-lg hover:text-black hover:transition-all hover:duration-500'
+                                style={{ border: "2px solid rgb(122,182,228)" }}
+                                disabled={loading}
+                            >
+                                {loading ? (
+                                    <span className="flex items-center justify-center">
+                                        <span className="loader mr-2"></span> Sending...
+                                    </span>
+                                ) : (
+                                    "Send Message"
+                                )}
+                            </button>
                         </form>
                     </div>
 
@@ -111,6 +131,7 @@ export default function Contacts() {
                     </div>
                 </>
             }
+
         </>
     )
 }
