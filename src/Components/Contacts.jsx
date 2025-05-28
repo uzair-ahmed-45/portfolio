@@ -5,7 +5,6 @@ import Aos from 'aos';
 export default function Contacts() {
     const [modal, setmodal] = useState(false)
     useEffect(() => {
-
         Aos.init({ duration: 1000 })
     }, []);
 
@@ -13,7 +12,7 @@ export default function Contacts() {
         event.preventDefault();
         const formData = new FormData(event.target);
 
-        formData.append("access_key", "69002af5-74cf-48a5-aa47-3952fa442711");
+        formData.append("access_key", "84b7b3ee-d23f-454e-8b35-3763b8aa4122");
 
         const object = Object.fromEntries(formData);
         const json = JSON.stringify(object);
@@ -29,7 +28,7 @@ export default function Contacts() {
 
         if (res.success) {
             setmodal(true)
-            console.log("Success", res);
+            // console.log("Success", res);
         }
     };
 
@@ -37,45 +36,45 @@ export default function Contacts() {
         <>
             <div className='md:py-20 md:px-20 py-12 px-8' id='contacts'>
                 <h1 className='text-2xl md:text-4xl font-bold text-center text-[rgb(122,182,228)]' data-aos="fade-up">Contact me</h1>
-                <div className='flex flex-wrap justify-between gap-10 w-[80vw] md:mt-20 mt-12 md:items-center items-start'>
-                    <div className='flex flex-col gap-8' data-aos="fade-up">
-                        <div className='flex justify-center md:items-center items-start'>
-                            <div className='ms-[-75px]'>
-                                <i class="fa-solid fa-user md:mt-0 mt-2" style={{ fontSize: "25px", color: "rgb(43, 110, 161)" }}></i>
+                <div className='flex flex-wrap md:justify-between justify-center gap-14 md:mt-20 mt-12 md:items-center items-start md:px-'>
+                    <div className='flex flex-col gap-8 justify-start' data-aos="fade-up">
+                        <div className='flex justify-start items-center gap-x-5'>
+                            <div className=''>
+                                <i class="fa-solid fa-user " style={{ fontSize: "25px", color: "rgb(43, 110, 161)" }}></i>
                             </div>
-                            <div className='flex flex-col ms-8'>
+                            <div className='flex flex-col'>
                                 <h1 className='text-lg font-medium text-[rgb(122,182,228)]'>Name</h1>
                                 <h2 className='text-lg md:text-xl text-gray-300'>Uzair Ahmed</h2>
                             </div>
                         </div>
-                        <div className='flex justify-center md:items-center items-startr '>
+                        <div className='flex justify-start items-center gap-x-5 '>
                             <div>
-                                <i class="fa-solid fa-envelope md:mt-0 mt-2" style={{ fontSize: "25px", color: "rgb(43, 110, 161)" }}></i>
+                                <i class="fa-solid fa-envelope" style={{ fontSize: "25px", color: "rgb(43, 110, 161)" }}></i>
                             </div>
-                            <div className='flex flex-col ms-8'>
+                            <div className='flex flex-col'>
                                 <h1 className='text-lg font-medium text-[rgb(122,182,228)]'>Email</h1>
-                                <h2 className='text-lg md:text-xl text-gray-300'>uzairbmj@gmail.com</h2>
+                                <h2 className='text-lg md:text-xl text-gray-300'>uzairahmed45994@gmail.com</h2>
                             </div>
                         </div>
-                        <div className='flex justify-center md:items-center items-start'>
-                            <div className='ms-[-35px]'>
+                        <div className='flex justify-start items-center gap-x-5'>
+                            <div className=''>
                                 <i class="fa-solid fa-phone md:mt-0 mt-2" style={{ fontSize: "25px", color: "rgb(43, 110, 161)" }}></i>
                             </div>
-                            <div className='flex flex-col ms-8'>
+                            <div className='flex flex-col'>
                                 <h1 className='text-lg font-medium text-[rgb(122,182,228)]'>Phone</h1>
                                 <h2 className='text-lg md:text-xl text-gray-300'>+92 334 8593896</h2>
                             </div>
                         </div>
-                        <div className='flex justify-center md:items-center items-start'>
-                            <div className='ms-[40px] md:ms-[60px]'>
-                                <i class="fa-solid fa-location-dot md:mt-0 mt-2" style={{ fontSize: "30px", color: "rgb(43, 110, 161)" }}></i>
+                        <div className='flex justify-start items-center gap-x-5'>
+                            <div className=''>
+                                <i class="fa-solid fa-location-dot" style={{ fontSize: "30px", color: "rgb(43, 110, 161)" }}></i>
                             </div>
-                            <div className='flex flex-col ms-8'>
+                            <div className='flex flex-col '>
                                 <h1 className='text-lg font-medium text-[rgb(122,182,228)]'>Location</h1>
                                 <h2 className='text-lg md:text-xl text-gray-300'>Agra Taj Colony lyari Karachi</h2>
                             </div>
                         </div>
-                        <div className='flex justify-between w-[80vw] md:w-[20vw] md:ms-[60px]'>
+                        <div className='flex justify-start items-center gap-x-5'>
                             <div className='i w-11 h-11  rounded-full text-center py-2 px-2 cursor-pointer hover:bg-[rgb(43,110,161)]' style={{ border: "1px solid rgb(122,182,228)" }}>
                                 <a href="https://wa.me/+923348593896" target='blank'> <i class="fa-brands fa-whatsapp icon"></i></a>
                             </div>
@@ -91,7 +90,7 @@ export default function Contacts() {
                             </div>
                         </div>
                     </div>
-                    <div className='md:max-w-[40vw] max-w-[80vw] md:px-12 ' data-aos="fade-up">
+                    <div className='md:max-w-[40vw] max-w-[80vw] ' data-aos="fade-up">
                         <form className='flex flex-col gap-3' onSubmit={onSubmit}>
                             <input type="text" placeholder='Username' required name='username' className='px-4 py-3 rounded-lg focus:bg-transparent inputs text-black focus:text-white' />
                             <input type="email" placeholder='Email' required name='email' className=' px-4 py-3 rounded-lg focus:bg-transparent text-black focus:text-white' />

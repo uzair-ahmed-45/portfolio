@@ -25,7 +25,7 @@ export default function Projects() {
             name: "Ecommerce Social Media Plateform",
             des: "Connect, share, and trade fashion on a social commerce platform designed for clothing enthusiasts.",
             githubLink: "",
-            websiteLink: "/LK.mp4"
+            websiteLink: "https://lk-jade.vercel.app/"
         },
         {
             imgurl: "/ems.jpg",
@@ -40,7 +40,7 @@ export default function Projects() {
             <div className='py-20 bg-[rgba(2,24,42,255)] mt-10 flex flex-col justify-center items-center gap-y-10' id='Projects'>
                 <h1 className='text-2xl md:text-4xl font-medium text-[rgb(122,182,228)] text-center mt-16' data-aos="fade-up">My Projects</h1>
                 <div className='flex justify-center items-center'>
-                    <div className='grid lg:grid-cols-3  grid-cols-1 justify-center items-center gap-y-5 gap-x-8'>
+                    <div className='grid lg:grid-cols-3 grid-cols-1 justify-center items-center gap-y-5 gap-x-8'>
                         {
                             projects && projects.map((items, index) => (
                                 <div key={index} className=' px-5 py-10 w-[80vw] sm:w-[50vw] md:w-[40vw] lg:w-[25vw] bg-[rgba(9,27,42,255)] rounded-xl hover:drop-shadow-[0_5px_10px_rgb(122,182,228)] hover:scale-110 hover:transition-all hover:duration-1000' data-aos="fade-up">
