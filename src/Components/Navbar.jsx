@@ -14,7 +14,7 @@ export default function Navbar() {
     <>
       <div className='md:flex md:justify-between px-10 md:px-20 md:py-6 py-5 md:bg-[rgba(9,27,42,255)] z-20 md:z-10 sticky top-0 left-0 right-0 nav'>
         <div className='flex justify-between'>
-          <h1 className=' hover:text-[rgb(122,182,228)] text-white  duration-500 text-xl md:text-3xl'>Portfolio</h1>
+          <h1 className=' hover:text-[rgb(122,182,228)] cursor-pointer text-white  duration-500 text-xl md:text-3xl' onClick={() => window.location.reload()}>Portfolio</h1>
           <div className='text-xl cursor-pointer md:hidden block mt-1' onClick={show} style={{ position: 'relative' }}>
             {bars ? (
               <i className="fas fa-times icon text-[30px] mt-[-5px]" onClick={show}></i>
