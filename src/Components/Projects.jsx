@@ -7,18 +7,25 @@ export default function Projects() {
     }, [])
     const projects = [
         {
-            imgurl: "/ecommercewebsite.PNG",
-            name: "LeatherTech Oasis Ecommerce Website",
-            des: "Build a successful e-commerce store by strategically selecting a niche and optimizing user experience.",
-            githubLink: "https://github.com/uzair-bmj/Leathertech_oasis.git",
-            websiteLink: "https://leathertech-oasis.vercel.app/"
+            imgurl: "/al-aish.jpg",
+            name: "Al Aish Al Kareem",
+            des: "A modern Arabic bakery voucher app with separate dashboards, QR-based redemption, real-time updates, RTL support, and secure login.",
+            githubLink: "",
+            websiteLink: "https://alaychalkarim.com/"
+        },
+        {
+            imgurl: "/industradz.jpg",
+            name: "Industradz",
+            des: "A full-stack platform connecting service providers and customers with bookings, subscriptions, location-based search, real-time scheduling, chat and secure payments.",
+            githubLink: "",
+            websiteLink: "https://industradzuser.vercel.app/"
         },
         {
             imgurl: "/homeopathy.PNG",
             name: "Homeopathy Case Taking Application",
             des: "Simplify homeopathy case-taking with an intuitive app for accurate diagnosis and patient management.",
             githubLink: "",
-            websiteLink: "/HomeoPathy.mp4"
+            websiteLink: "https://asfand-homeo.vercel.app/"
         },
         {
             imgurl: "/LK.jpg",
@@ -32,7 +39,7 @@ export default function Projects() {
             name: "Employee Management System",
             des: "Manage employee rentals seamlessly with an intuitive platform designed for efficient staffing and client coordination.",
             githubLink: "",
-            websiteLink: "/EMS.mp4"
+            websiteLink: "https://ems-virid.vercel.app/"
         }
     ]
     return (
@@ -40,7 +47,7 @@ export default function Projects() {
             <div className='py-20 bg-[rgba(2,24,42,255)] mt-10 flex flex-col justify-center items-center gap-y-10' id='Projects'>
                 <h1 className='text-2xl md:text-4xl font-medium text-[rgb(122,182,228)] text-center mt-16' data-aos="fade-up">My Projects</h1>
                 <div className='flex justify-center items-center'>
-                    <div className='grid lg:grid-cols-3 grid-cols-1 justify-center items-center gap-y-5 gap-x-8'>
+                    <div className='grid lg:grid-cols-3 grid-cols-1 justify-center items-center gap-y-5 gap-x-5'>
                         {
                             projects && projects.map((items, index) => (
                                 <div key={index} className=' px-5 py-10 w-[80vw] sm:w-[50vw] md:w-[40vw] lg:w-[25vw] bg-[rgba(9,27,42,255)] rounded-xl hover:drop-shadow-[0_5px_10px_rgb(122,182,228)] hover:scale-110 hover:transition-all hover:duration-1000' data-aos="fade-up">

@@ -93,7 +93,7 @@ export default function Contacts() {
                                 <a href="https://www.linkedin.com/in/uzairahmed4594" target='blank'><i class="fa-brands fa-linkedin-in icon"></i></a>
                             </div>
                             <div className='i w-11 h-11 rounded-full text-center py-2 px-2 cursor-pointer hover:bg-[rgb(43,110,161)]' style={{ border: "1px solid rgb(122,182,228)" }}>
-                                <a href="https://github.com/uzair-bmj" target='blank'><i class="fa-brands fa-github icon"></i></a>
+                                <a href="https://github.com/uzair-ahmed-45" target='blank'><i class="fa-brands fa-github icon"></i></a>
                             </div>
                         </div>
                     </div>

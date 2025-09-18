@@ -12,7 +12,7 @@ export default function About() {
         <div className='flex justify-center py-40 md:py-32 px-5'>
             <div className='flex flex-col md:flex-row justify-center items-center px-10 gap-x-24 gap-y-10 w-full' id='about'>
                 <div className='' data-aos="fade-right">
-                    <img src="/profile.jpg" alt="Uzair Ahmed" className='img' />
+                    <img src="/profile.png" alt="Uzair Ahmed" className='img ' />
                 </div>
                 <div className='w-full md:w-[40vw] flex flex-col md:items-start items-center gap-3' data-aos="fade-up">
                     <h1 className='text-4xl font-bold text-[rgb(122,182,228)]'>About me</h1>
